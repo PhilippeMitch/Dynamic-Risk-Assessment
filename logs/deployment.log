@@ -1,0 +1,4 @@
+root - INFO - Running deployment.py script
+root - INFO - Running deployment.py script
+root - INFO - Deploying trained model to production
+root - INFO - File copied to the deployment path

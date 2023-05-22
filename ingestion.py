@@ -54,7 +54,7 @@ def merge_multiple_dataframe():
     # remove duplicates
     df = df.drop_duplicates(ignore_index=True)
     # write to an output file
-    df.to_csv(os.path.join(output_folder_path, "finaldata.csv"))
+    df.to_csv(os.path.join(output_folder_path, "finaldata.csv"), index=False)
     logging.info(f"Final dataset saved in the folder {output_folder_path} \
                  {datetime.now().strftime('%m/%d/%Y, %H:%M:%S')}")
     # saving a record of the ingestion
@@ -65,5 +65,5 @@ def merge_multiple_dataframe():
     logging.info(f"Save metadata for Data ingestion {datetime.now().strftime('%m/%d/%Y, %H:%M:%S')}")
 
 if __name__ == '__main__':
-    logging.info("Running ingestion.py {datetime.now().strftime('%m/%d/%Y, %H:%M:%S')}")
+    logging.info(f"Running ingestion.py {datetime.now().strftime('%m/%d/%Y, %H:%M:%S')}")
     merge_multiple_dataframe()

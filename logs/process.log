@@ -1,0 +1,10 @@
+root - INFO - Running ingestion.py 05/22/2023, 21:34:29
+root - INFO - INFO: Load the config file 05/22/2023, 21:34:29
+root - INFO - Info check for the datasets 05/22/2023, 21:34:29
+root - INFO - Final dataset saved in the folder ingesteddata                  05/22/2023, 21:34:29
+root - INFO - Save metadata for Data ingestion 05/22/2023, 21:34:29
+root - INFO - Running ingestion.py 05/22/2023, 21:35:10
+root - INFO - INFO: Load the config file 05/22/2023, 21:35:10
+root - INFO - Info check for the datasets 05/22/2023, 21:35:10
+root - INFO - Final dataset saved in the folder ingesteddata                  05/22/2023, 21:35:10
+root - INFO - Save metadata for Data ingestion 05/22/2023, 21:35:10
