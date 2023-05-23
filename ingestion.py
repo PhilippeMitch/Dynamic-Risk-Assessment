@@ -1,7 +1,7 @@
 """
 This script is to make that data ingestion go smoothly and easily.
 author: Philippe Jean Mith
-date: May 20th 2022
+date: May 22th 2023
 """
 
 # Import the necessary libraries

@@ -33,13 +33,13 @@ def train_model():
     """
     Function that accomplishes model training
     """
-    # get the needed path
+    # Get the needed path
     dataset_csv_path, model_path = get_config()
     # Read the dataset
     data = pd.read_csv(os.path.join(dataset_csv_path, 'finaldata.csv'))
     y_data = data.pop('exited')
     X_data = data.drop(['corporation'], axis=1)
-    #use this logistic regression for training
+    # Use this logistic regression for training
     logit = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                     intercept_scaling=1, l1_ratio=None, max_iter=100,
                     multi_class='auto', n_jobs=None, penalty='l2',
@@ -47,10 +47,10 @@ def train_model():
                     warm_start=False)
     
     logging.info("Start training the model")
-    #fit the logistic regression to your data
+    # Fit the logistic regression to your data
     model = logit.fit(X_data, y_data)
     logging.info("Model done trainig!")
-    #write the trained model to your workspace in a file called trainedmodel.pkl
+    # Write the trained model to your workspace in a file called trainedmodel.pkl
     os.makedirs(model_path, exist_ok=True)
     pickle.dump(model, open(os.path.join(model_path, 'trainedmodel.pkl'), 'wb'))
     logging.info("Save the trained model")
