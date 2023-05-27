@@ -1,0 +1,4 @@
+root - INFO - The prediction endpoint was executed successfully
+root - INFO - The score endpoint was executed successfully
+root - INFO - The stats endpoint was executed successfully
+root - INFO - The diagnostics endpoint was executed successfully

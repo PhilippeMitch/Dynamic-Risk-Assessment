@@ -1,21 +1,25 @@
 root - INFO - Calculate timing of ingestion.py
 root - INFO - Calculate timing of training.py
+root - INFO - Start the classification report - 2023_05_27:16-00
 root - INFO - Calculating missing data
 root - INFO - Cheking the dependencies
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.23.10.183:8000
+werkzeug - INFO - [33mPress CTRL+C to quit[0m
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 145-252-261
+root - INFO - The predict endpoint have been call
+werkzeug - INFO - 127.0.0.1 - - [27/May/2023 16:02:06] "POST /prediction?dataset_file_path=testdata/testdata.csv HTTP/1.1" 200 -
+root - INFO - The score endpoint have been call
+werkzeug - INFO - 127.0.0.1 - - [27/May/2023 16:02:06] "GET /scoring HTTP/1.1" 200 -
+root - INFO - The stats endpoint have been call
+werkzeug - INFO - 127.0.0.1 - - [27/May/2023 16:02:06] "GET /summarystats HTTP/1.1" 200 -
+root - INFO - The diagnostics endpoint have been call
+root - INFO - Calculating missing data
 root - INFO - Calculate timing of ingestion.py
 root - INFO - Calculate timing of training.py
-root - INFO - Calculating missing data
 root - INFO - Cheking the dependencies
-root - INFO - Calculate timing of ingestion.py
-root - INFO - Calculate timing of training.py
-root - INFO - Calculating missing data
-root - INFO - Cheking the dependencies
-root - INFO - Calculate timing of ingestion.py
-root - INFO - Calculate timing of training.py
-root - INFO - Calculating missing data
-root - INFO - Cheking the dependencies
-root - INFO - Calculate timing of ingestion.py
-root - INFO - Calculate timing of training.py
-root - INFO - Start the classification report - 2023_05_27:07-21
-root - INFO - Calculating missing data
-root - INFO - Cheking the dependencies
+werkzeug - INFO - 127.0.0.1 - - [27/May/2023 16:02:11] "GET /diagnostics HTTP/1.1" 200 -

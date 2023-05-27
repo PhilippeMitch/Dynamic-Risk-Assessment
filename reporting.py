@@ -48,7 +48,7 @@ def plot_confusion_matrix(y_test, y_predicted):
     ax.xaxis.tick_top()
     ax.set_ylabel('Actual Values',)
     ax.yaxis.set_ticklabels(['0', '1'], fontsize = 15)
-    plt.savefig('images/confusion_matrix.png')
+    plt.savefig('images/confusion_matrix2.png')
 
 def feature_importance(X_test, model):
     plt.figure(figsize=(20,10))
@@ -58,7 +58,7 @@ def feature_importance(X_test, model):
     ax = feature_importance.plot(x='Feature', y='Importance', kind='barh', figsize=(10, 6))
     ax.set_xlabel('Feature Importance')
     ax.set_title('Feature Importance')
-    plt.savefig('images/feature_importance.png')
+    plt.savefig('images/feature_importance2.png')
 
 def permutation_importance_(X_test, y_test, model):
     plt.figure(figsize=(20,10))
@@ -75,7 +75,7 @@ def permutation_importance_(X_test, y_test, model):
     )
     ax.set_xlabel('Permutation Importance')
     ax.set_title('Permutation Importance with Standard Deviation')
-    plt.savefig('images/permutation_importance.png')
+    plt.savefig('images/permutation_importance2.png')
 
 
 def classification_report_(y_test, y_pred):
@@ -133,11 +133,11 @@ def gen_report_pdf(ingestedfiles, latestscore,
     for txt in res_lst:
         pdf.add_text(txt)
     # Add the confusion matrix image
-    pdf.image_("images/confusion_matrix.png", 110, 75, 65)
+    pdf.image_("images/confusion_matrix2.png", 110, 75, 65)
     pdf.chapter_subtitle("Feature Importance & Permutation Importance with Standard Deviation")
     # Add the feature importance and the permutation importance images
-    pdf.image_("images/feature_importance.png", 15, 140, 95)
-    pdf.image_("images/permutation_importance.png", 110, 140, 95)
+    pdf.image_("images/feature_importance2.png", 15, 140, 95)
+    pdf.image_("images/permutation_importance2.png", 110, 140, 95)
     pdf.add_page()
     pdf.chapter_title(3, "Diagnostics for execution time and dependencies")
     pdf.chapter_subtitle("Ingestion and Training execution times")
@@ -151,7 +151,7 @@ def gen_report_pdf(ingestedfiles, latestscore,
             dep_row = dep_table.row()
             for dep_datum in dep_data_row:
                 dep_row.cell(dep_datum)
-    day = str(datetime.now().strftime("%Y_%m_%d:%H-%M"))
+    day = str(datetime.now().strftime("%Y_%m_%d_%H-%M"))
     # Generate the pdf file
     pdf.output(f'report/system_report{day}.pdf', 'F')
 

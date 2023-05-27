@@ -47,11 +47,13 @@ def score_model():
     # Evaluate the model
     y_pred = model.predict(X_test)
     f1_score = metrics.f1_score(y_test, y_pred)
+    f1_score = round(f1_score, 2)
 
     # Save the evaluation score into a file
     with open(os.path.join(model_path, 'latestscore.txt'), 'w') as file:
-        file.write(f"f1 score = {f1_score}")
+        file.write(f"f1_score = {f1_score}")
     logging.info("Evaluation scores saved")
+    print(f1_score)
 
 if __name__ == '__main__':
     logging.info("Running scoring.py script")

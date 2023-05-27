@@ -1,0 +1,72 @@
+
+
+Model Prediction
+
+ [  0,  1,  1,  1,  1]
+
+F1 Score
+
+ 0.33
+
+Summary statistics
+
+ {
+    "lastmonth_activity": {
+        "mean": 5625.923076923077,
+        "std": 19444.774621317832,
+        "median": 425.0
+    },
+    "lastyear_activity": {
+        "mean": 763.5384615384615,
+        "std": 2016.6093569309696,
+        "median": 97.5
+    },
+    "number_of_employees": {
+        "mean": 457.46153846153845,
+        "std": 800.604832899189,
+        "median": 99.0
+    },
+    "exited": {
+        "mean": 0.5,
+        "std": 0.5099019513592785,
+        "median": 0.5
+    }
+}
+
+System diagnostic
+
+ {
+    "missing_data_percentage": {
+        "corporation": {
+            "percent ": 0.0
+        },
+        "lastmonth_activity": {
+            "percent ": 0.0
+        },
+        "lastyear_activity": {
+            "percent ": 0.0
+        },
+        "number_of_employees": {
+            "percent ": 0.0
+        },
+        "exited": {
+            "percent ": 0.0
+        }
+    },
+    "execution_time": {
+        "ingestion_timing": 0.24413170499610715,
+        "training_timing": 0.5082257549947826
+    },
+    "outdated_packages": [
+        {
+            "name": "pip",
+            "version": "22.0.2",
+            "latest_version": "23.1.2"
+        },
+        {
+            "name": "setuptools",
+            "version": "59.6.0",
+            "latest_version": "67.8.0"
+        }
+    ]
+}
