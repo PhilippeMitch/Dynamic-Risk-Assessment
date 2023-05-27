@@ -11,7 +11,6 @@ import logging
 import ingestion
 import pandas as pd
 import training
-import scoring
 import subprocess
 import deployment
 import diagnostics

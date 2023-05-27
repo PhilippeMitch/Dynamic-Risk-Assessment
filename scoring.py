@@ -1,5 +1,6 @@
 """
-This script is to accomplish model scoring
+This script is to get model scoring
+author: Philippe Jean Mith
 date: May 22th 2023
 """
 import logging
