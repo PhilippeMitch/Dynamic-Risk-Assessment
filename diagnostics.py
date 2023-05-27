@@ -57,7 +57,6 @@ def model_predictions(dataset=None):
     except FileNotFoundError as err:
         logging.error("Could not found the trainedmodel.pkl file")
 
-    _ = dataset.pop('exited')
     X_test = dataset.drop(['corporation'], axis=1)
     # Evaluate the model
     y_pred = model.predict(X_test)
